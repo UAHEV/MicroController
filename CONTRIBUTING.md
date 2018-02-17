@@ -1,5 +1,7 @@
 # UAHEV Contributing Guidelines
 
+General rule of thumb: Avoid doing/saying anything that could be mistaken as a Torvalds/Jobs/Gates rant
+
 ## Formatting and Neat-Freak things
 
 Use the [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html). Don't be pedantic, but try to be neat
