@@ -2,7 +2,7 @@
 //  MCData.h
 //  MicroController
 //
-//  Created by William Boyd on 2/16/18.
+//  Created on 2/16/18.
 //  Copyright (c) 2018 UAH Electric Vehicle Club
 //  Licensed under Apache License v2.0
 //
@@ -13,10 +13,11 @@
 
 #ifndef MICROCONTROLLER_DATA_MCDATA_H_
 #define MICROCONTROLLER_DATA_MCDATA_H_
+#include "Arduino.h"
 
 class MCData {
  public:
-  // The hey used to convert a JSON value
+  // The key used to convert a JSON value
   // into a specific type of MCData
   static const string key;
 
