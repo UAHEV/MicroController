@@ -1,3 +1,6 @@
+> This is an example of what a "Hey look at our repo" README might look like. It's less a technical specification and more a "Here's how I think this should work and am going to design for until things change" 
+> // will
+
 # MicroController
 
 `MicroController` is a framework for building Master-Slave based control systems. MicroController "projects" have 2 portions:
