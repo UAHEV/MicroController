@@ -29,14 +29,18 @@ MCInteger::MCInteger(int value) {
 
 }
 
+// TODO: Implement this!
 char* MCInteger::to_json() {
 
 	return "{\"type\": \"MCInteger\", \"value\": -999}";
 
 };
 
+// TODO: Implement this!
 void MCInteger::from_json(char* value) {
 
 	this->value = -999
 
 };
+
+
