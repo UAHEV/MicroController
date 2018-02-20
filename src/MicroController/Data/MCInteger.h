@@ -16,7 +16,7 @@
 #include "MCData.h"
 
 class MCInteger: MCData {
-public:
+ public:
   // The default constructor
   MCInteger();
   MCInteger(int value);

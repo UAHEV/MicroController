@@ -18,29 +18,27 @@ const char* MCInteger::key = "MCInteger";
 /* Implement the default constructor */
 MCInteger::MCInteger() {
 
-	this->value = 0;
+    this->value = 0;
 
 }
 
 /* Implement the explicit constructor */
 MCInteger::MCInteger(int value) {
 
-	this->value = value;
+    this->value = value;
 
 }
 
 // TODO: Implement this!
 char* MCInteger::to_json() {
 
-	return "{\"type\": \"MCInteger\", \"value\": -999}";
+    return "{\"type\": \"MCInteger\", \"value\": -999}";
 
 };
 
 // TODO: Implement this!
 void MCInteger::from_json(char* value) {
 
-	this->value = -999
+    this->value = -999
 
 };
-
-
