@@ -25,7 +25,7 @@ class MCData {
   MCData();
 
   // The virtual functions to_ and from_json(). Required for implementation
-  char* to_json() {};
+  const char* to_json() {};
   void from_json(char* value) {};
 
 };
