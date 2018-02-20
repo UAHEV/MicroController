@@ -15,7 +15,7 @@
 #include "Arduino.h"
 #include "MCData.h"
 
-class MCInteger: MCData {
+class MCInteger: public MCData {
  public:
   // The default constructor
   MCInteger();
