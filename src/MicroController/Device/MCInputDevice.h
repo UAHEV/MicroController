@@ -10,3 +10,4 @@
 //
 //  Defines the base class for a MicroController InputDevice. All
 //  other input devices will inherit from this class.
+//
