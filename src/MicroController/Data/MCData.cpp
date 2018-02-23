@@ -10,3 +10,5 @@
 //
 //  Implements the base data type for MicroController. All
 //  other data types inherit from MCData or its children
+
+MCData::key = "MCData";
