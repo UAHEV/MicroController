@@ -12,4 +12,4 @@
 //  other data types inherit from MCData or its children
 #include "MCData.h"
 
-MCData::key = "MCData";
+char *MCData::key = "MCData";
