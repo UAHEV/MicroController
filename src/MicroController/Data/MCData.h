@@ -19,10 +19,11 @@ class MCData {
  public:
   // The key used to convert a JSON value
   // into a specific type of MCData
-  static const char* key;
+  static char* key;
 
   // The default constructor
   MCData();
+  virtual ~MCData();
 
   // The virtual functions to_ and from_json(). Required for implementation
   virtual const char* to_json() =0;
