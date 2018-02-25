@@ -11,9 +11,11 @@
 //  Implementation for the Integer subclass for MCData
 
 #include "MCInteger.h"
+#include "ArduinoJson.hpp"
+
 
 /* Define the Key for the JSON Strings */
-const char* MCInteger::key = "MCInteger";
+String MCInteger::get_key() { return "MCInteger"; }
 
 /* Implement the default constructor */
 MCInteger::MCInteger() {
@@ -25,12 +27,49 @@ MCInteger::MCInteger(int value) {
   this->value = value;
 }
 
+/* Implement the accessors and mutators */
+int MCInteger::get_value() {
+
+  return this->value;
+
+}
+
+void MCInteger::set_value(int value) {
+
+  this->value = value;
+
+}
+
+/* Implement the destructor */
+MCInteger::~MCInteger() {}
+
 // TODO: Implement this!
-const char* MCInteger::to_json() {
-  return "{\"type\": \"MCInteger\", \"value\": -999}";
+String MCInteger::to_json() {
+
+  ArduinoJson::StaticJsonBuffer<200> json;
+  ArduinoJson::JsonObject& root = json.createObject();
+  root["type"] = MCInteger::get_key();
+  root["value"] = this->value;
+
+  String return_value;
+  root.printTo(return_value);
+
+  return return_value;
+
 };
 
 // TODO: Implement this!
-void MCInteger::from_json(char* value) {
-  this->value = -999
+void MCInteger::from_json(String raw) {
+  ArduinoJson::StaticJsonBuffer<200> json;
+  ArduinoJson::JsonObject& root = json.parseObject(raw);
+
+  /* Check if there was an error */
+  if (root.success() == false) {
+    // TODO: Handle this error
+  }
+  else {
+    int value = root["value"];
+    this->value= value;
+  }
+
 };

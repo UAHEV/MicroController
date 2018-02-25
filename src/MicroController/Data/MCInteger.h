@@ -16,9 +16,20 @@
 
 class MCInteger: public MCData {
  public:
-  // The default constructor
+
+  /* Inherit the MCData methods */
+  virtual String get_key();
+  virtual String to_json();
+  virtual void from_json(String raw);
+
+  /* define the accessors and mutators */
+  int get_value();
+  void set_value(int value);
+
+  // The default constructors and destructor
   MCInteger();
   MCInteger(int value);
+  virtual ~MCInteger();
 
  private:
   int value;

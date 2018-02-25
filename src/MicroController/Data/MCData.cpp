@@ -11,5 +11,7 @@
 //  Implements the base data type for MicroController. All
 //  other data types inherit from MCData or its children
 #include "MCData.h"
+#include "ArduinoJson.hpp"
+using namespace ArduinoJson;
 
-char *MCData::key = "MCData";
+String MCData::get_key() { return "MCData"; }
