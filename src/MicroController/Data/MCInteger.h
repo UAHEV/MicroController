@@ -12,7 +12,6 @@
 
 #ifndef MICROCONTROLLER_DATA_MCINTEGER_H_
 #define MICROCONTROLLER_DATA_MCINTEGER_H_
-#include "Arduino.h"
 #include "MCData.h"
 
 class MCInteger: public MCData {
