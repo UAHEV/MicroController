@@ -15,11 +15,12 @@
 #define MICROCONTROLLER_DEVICE_MCINPUTDEVICE_H_
 #include "MCDevice.h"
 
-class MCInputDevice: MCDevice {
+class MCInputDevice: public MCDevice {
  public:
 
   // The default constructor
-  MCInputDevice();
+  virtual MCInputDevice();
+  virtual ~MCInputDevice();
 
   // The virtual function for returning data. This is required to be implemented.
   virtual void get_next() =0;
