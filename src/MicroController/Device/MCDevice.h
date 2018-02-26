@@ -12,7 +12,7 @@
 
 #ifndef MICROCONTROLLER_DEVICE_MCDEVICE_H_
 #define MICROCONTROLLER_DEVICE_MCDEVICE_H_
-#include "MCConnection.h"
+#include "../Connection/MCConnection.h"
 
 
 class MCDevice {
