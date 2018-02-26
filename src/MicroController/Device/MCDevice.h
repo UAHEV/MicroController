@@ -8,7 +8,7 @@
 //
 //  See README.md and LISCENSE for more details
 //
-//  A framework for Master-Slave based control systems
+//  The base Device class for MicroController
 
 #ifndef MICROCONTROLLER_DEVICE_MCDEVICE_H_
 #define MICROCONTROLLER_DEVICE_MCDEVICE_H_
