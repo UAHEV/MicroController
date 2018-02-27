@@ -14,4 +14,6 @@
 #include "ArduinoJson.hpp"
 using namespace ArduinoJson;
 
+using Data::MCData;
+
 String MCData::get_key() { return "MCData"; }

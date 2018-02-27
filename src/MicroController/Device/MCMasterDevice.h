@@ -16,12 +16,16 @@
 
 #include "MCDevice.h"
 
-class MCMasterDevice: public MCDevice {
- private:
-  void build(void) = 0; /* MUST be implemented by the end user */
-  void setup(void) { /* Do nothing by default */ };
-  void loop(void) = 0; /* MUST be implented by the end user */
-  void teardown(void) { /* Do nothing by default */ };
-};
+namespace Device {
+
+  class MCMasterDevice: public MCDevice {
+   private:
+    void build(void) = 0; /* MUST be implemented by the end user */
+    void setup(void) { /* Do nothing by default */ };
+    void loop(void) = 0; /* MUST be implented by the end user */
+    void teardown(void) { /* Do nothing by default */ };
+  };
+
+}
 
 #endif // MICROCONTROLLER_DEVICE_MCMASTERDEVICE_H_

@@ -12,16 +12,19 @@
 
 #ifndef MICROCONTROLLER_DEVICE_MCDEVICE_H_
 #define MICROCONTROLLER_DEVICE_MCDEVICE_H_
-#include "../Connection/MCConnection.h"
+#include "MicroController.h"
+
+namespace Device {
+
+  class MCDevice {
+   public:
+
+   private:
+    Connection::MCConnection connection;
 
 
-class MCDevice {
- public:
+  };
 
- private:
-  MCConnection connection;
-
-
-};
+}
 
 #endif // MICROCONTROLLER_DEVICE_MCDEVICE_H_

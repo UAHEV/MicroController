@@ -14,26 +14,30 @@
 #define MICROCONTROLLER_DATA_MCINTEGER_H_
 #include "MCData.h"
 
-class MCInteger: public MCData {
- public:
+namespace Data {
 
-  /* Inherit the MCData methods */
-  virtual String get_key();
-  virtual String to_json();
-  virtual void from_json(String raw);
+  class MCInteger: public MCData {
+   public:
 
-  /* define the accessors and mutators */
-  int get_value();
-  void set_value(int value);
+    /* Inherit the MCData methods */
+    virtual String get_key();
+    virtual String to_json();
+    virtual void from_json(String raw);
 
-  // The default constructors and destructor
-  MCInteger();
-  MCInteger(int value);
-  virtual ~MCInteger();
+    /* define the accessors and mutators */
+    int get_value();
+    void set_value(int value);
 
- private:
-  int value;
+    // The default constructors and destructor
+    MCInteger();
+    MCInteger(int value);
+    virtual ~MCInteger();
 
-};
+   private:
+    int value;
+
+  };
+
+}
 
 #endif // MICROCONTROLLER_DATA_MCINTEGER_H_

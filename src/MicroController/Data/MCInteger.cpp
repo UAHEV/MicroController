@@ -13,6 +13,7 @@
 #include "MCInteger.h"
 #include "ArduinoJson.hpp"
 
+using Data::MCInteger;
 
 /* Define the Key for the JSON Strings */
 String MCInteger::get_key() { return "MCInteger"; }

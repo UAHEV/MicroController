@@ -13,11 +13,13 @@
 #ifndef MICROCONTROLLER_MICROCONTROLLER_H_
 #define MICROCONTROLLER_MICROCONTROLLER_H_
 
-#include "Connection/MCConnection.h"
-
 #include "Data/MCData.h"
 #include "Data/MCInteger.h"
 
+#include "Connection/MCConnection.h"
+//#include "Connection/MCWireConnection.h"
+
 #include "Device/MCDevice.h"
+//#include "Device/MCInputDevice.h"
 
 #endif // MICROCONTROLLER_MICROCONTROLLER_H_

@@ -14,16 +14,20 @@
 #ifndef MICROCONTROLLER_CONNECTION_MCCONNECTION_H_
 #define MICROCONTROLLER_CONNECTION_MCCONNECTION_H_
 
-#include "../Data/MCData.h"
+#include "MicroController.h"
 
-class MCConnection {
- public:
-  virtual void send_data(MCData data);
-  virtual MCData get_data();
-  virtual bool is_connected();
+namespace Connection {
 
-  virtual ~MCConnection();
+  class MCConnection {
+   public:
+    virtual void send_data(Data::MCData data);
+    virtual Data::MCData get_data();
+    virtual bool is_connected();
 
-};
+    virtual ~MCConnection();
+
+  };
+
+}
 
 #endif // MICROCONTROLLER_CONNECTION_MCCONNECTION_H_

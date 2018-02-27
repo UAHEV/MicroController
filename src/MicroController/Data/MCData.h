@@ -15,16 +15,20 @@
 #define MICROCONTROLLER_DATA_MCDATA_H_
 #include "Arduino.h"
 
-class MCData {
- public:
-  // The key used to convert a JSON value
-  // into a specific type of MCData
-  static String get_key();
+namespace Data {
 
-  // to_ and from_json(). Required for implementation
-  String to_json();
-  void from_json(String);
+  class MCData {
+   public:
+    // The key used to convert a JSON value
+    // into a specific type of MCData
+    static String get_key();
 
-};
+    // to_ and from_json(). Required for implementation
+    String to_json();
+    void from_json(String);
+
+  };
+
+}
 
 #endif // MICROCONTROLLER_DATA_MCDATA_H_
