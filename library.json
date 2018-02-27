@@ -1,0 +1,20 @@
+{
+  "name": "MicroController",
+  "keywords": "Control, I2C",
+  "description": "An embedded control framework for Master-Slave based architectures",
+  "authors": {
+    "name": "UAH Electric Vehicle Club"
+  },
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/UAHEV/MicroController.git"
+  },
+  "version":"0.0.1",
+  "frameworks": "arduino",
+  "platforms": "*",
+  "exclude": [
+    "docs",
+    "templates"
+  ]
+}
