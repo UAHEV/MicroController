@@ -21,7 +21,7 @@ namespace Device {
    public:
 
     // The default constructor
-    virtual MCInputDevice();
+    MCInputDevice();
     virtual ~MCInputDevice();
 
     // The virtual function for returning data. This is required to be implemented.
