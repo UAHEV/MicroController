@@ -16,5 +16,8 @@
   "exclude": [
     "docs",
     "templates"
+  ],
+  "include": [
+    "src/MicroController"
   ]
 }
