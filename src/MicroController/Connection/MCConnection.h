@@ -14,7 +14,7 @@
 #ifndef MICROCONTROLLER_CONNECTION_MCCONNECTION_H_
 #define MICROCONTROLLER_CONNECTION_MCCONNECTION_H_
 
-#include "MicroController.h"
+#include "../MicroController.h"
 
 namespace Connection {
 
