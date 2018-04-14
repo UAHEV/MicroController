@@ -4,12 +4,12 @@ General rule of thumb: Avoid doing/saying anything that could be mistaken as a T
 
 ## Formatting and Neat-Freak things
 
-Use the [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html). Don't be pedantic, but try to be neat
+Use the [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html). Don't be pedantic, but try to be neat. A copy is included as `templates/styleguide.xml`
 
 To keep files formatted correctly, use the following guidelines:
 
 `.h` template:
-```Cpp
+```cpp
 //
 //  <filename>
 //  MicroController
@@ -27,7 +27,9 @@ To keep files formatted correctly, use the following guidelines:
 #define MICROCONTROLLER_PATH_WITH_UNDERSCORES_
 
 class <ClassName> {
-  /* Change the World (TM) here... */
+  /*
+  Change the World (TM) here...
+  */
 };
 
 #endif // MICROCONTROLLER_PATH_WITH_UNDERSCORES_
