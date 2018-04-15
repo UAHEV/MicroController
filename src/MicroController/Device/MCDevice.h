@@ -17,10 +17,10 @@
 namespace Device {
 
   class MCDevice {
-   public:
+   //public:
 
-   private:
-    Connection::MCConnection connection;
+   //private:
+    //Connection::MCConnection connection;
 
 
   };
